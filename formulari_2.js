@@ -8,14 +8,18 @@ document.getElementById("password2").addEventListener("blur",validatePassword2);
 
 
 function onSubmit (){
-    
-    validateName();
-    validateSurname();
-    validateEmail();
-    validatePhone();
-    validatePassword1();
-    validatePassword2();
-   
+    if (
+    validateName() &&
+    validateSurname() &&
+    validateEmail() &&
+    validatePhone() &&
+    validatePassword1() &&
+    validatePassword2()
+    ){
+        return true;
+    } else {
+        return false;
+    }
 }
 
 function validateName() {

@@ -2,7 +2,6 @@
 <html lang="en">
     <!DOCTYPE html>
  
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,23 +19,23 @@
 
 <body>
     <div class="container contact-form">
-        <div class="contact-image">
+        <div class="contact-image col-dn">
             <img src="github.svg" />
         </div>
-        <form  onsubmit="return (onSubmit())"  action="/done.html" method="post" >
+        <form action="/done.html" onsubmit="return onSubmit()"   >
             <h1>Create your profile</h1>
 
                 <div class=" justify-content-center ">
                     <div class="row ">
                         
-                        <div class="form-group col-6">
+                        <div class="form-group col-12 col-sm-6">
                             <label class="input-label" for="name" id="contName">Name</label>
                             <input type="text" id="name" name="txtName" class="form-control" placeholder="Enter your name"  />
                             <p id="name1" class="text-danger"></p>
                             <p id="name2" class="text-success"></p>
                         </div>
 
-                        <div class="form-group col-6">
+                        <div class="form-group col-12 col-sm-6">
                             <label class="input-label" for="surname" id="contSurname">Surname</label>
                             <input type="text" id="surname" name="txtSurname" class="form-control" placeholder="Enter your surname" />
                             <p id="surname1" class="text-danger"></p>
@@ -44,13 +43,13 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="form-group col-6">
+                        <div class="form-group col-12 col-sm-6">
                             <label class="input-label" for="email" id="contEmail">Email</label>                            
                             <input type="text" id="email" name="email" class="form-control" placeholder="Enter your email address" />
                             <p id="email1" class="text-danger"></p>
                             <p id="email2" class="text-success"></p>
                         </div>
-                        <div class="form-group col-6">
+                        <div class="form-group col-12 col-sm-6">
                             <label class="input-label" for="phone" id="contPhone">Phone Number</label>
                             <input type="text" id="phone" name="phone" class="form-control" placeholder="*********"/>
                             <p id="phone1" class="text-danger"></p>
@@ -59,13 +58,13 @@
                     </div>
 
                     <div class="row">
-                        <div class="form-group col-6">
+                        <div class="form-group col-12 col-sm-6">
                             <label class="input-label" for="password" id="contPassword">Password</label>
                             <input type="password" id="password1" name="password1" class="form-control" value="Password" />
                             <p id="psswd1a" class="text-danger"></p>
                             <p id="psswd1b" class="text-success"></p>
                         </div>
-                        <div class="form-group col-6">
+                        <div class="form-group col-12 col-sm-6">
                             <label class="input-label" for="password" id="contPassword">Password again</label>
                             <input type="password" id="password2" name="password2" class="form-control" value="Password" />
                             <p id="psswd2a" class="text-danger"></p>
