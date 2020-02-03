@@ -1,29 +1,52 @@
 document.getElementById("name").addEventListener("blur",validateName);
+document.getElementById("surname").addEventListener("blur",validateSurname);
 document.getElementById("email").addEventListener("blur",validateEmail);
 document.getElementById("phone").addEventListener("blur",validatePhone);
 document.getElementById("password1").addEventListener("blur",validatePassword1);
 document.getElementById("password2").addEventListener("blur",validatePassword2);
 
+
+
 function onSubmit (){
     
     validateName();
+    validateSurname();
     validateEmail();
     validatePhone();
     validatePassword1();
     validatePassword2();
+   
 }
 
 function validateName() {
     var nameInput = document.getElementById("name").value;
 
-    if(nameInput.length < 5){
-        document.getElementById("name1").innerHTML="name must has atleast 5 charecters";
+    if(nameInput.length < 3){
+        document.getElementById("name1").innerHTML="name must has atleast 3 charecters";
         document.getElementById("name2").innerHTML=""
         return false;
     }else{
         document.getElementById("name1").innerHTML="";
         document.getElementById("name2").innerHTML="correct";
+        return true;
     }
+    
+    
+}
+
+function validateSurname() {
+    var nameInput = document.getElementById("surname").value;
+
+    if(nameInput.length < 5){
+        document.getElementById("surname1").innerHTML="name must has atleast 5 charecters";
+        document.getElementById("surname2").innerHTML=""
+        return false;
+    }else{
+        document.getElementById("surname1").innerHTML="";
+        document.getElementById("surname2").innerHTML="correct";
+        return true;
+    }
+
 
 }
 
@@ -38,6 +61,7 @@ function validateEmail(){
     }else{
         document.getElementById("email1").innerHTML="";
         document.getElementById("email2").innerHTML="correct";
+        return true;
     }
 }
 
@@ -52,6 +76,7 @@ function validatePhone(){
     }else{
         document.getElementById("phone1").innerHTML="";
         document.getElementById("phone2").innerHTML="correct";
+        return true;
     }
 }
 
@@ -66,6 +91,7 @@ function validatePassword1(){
     }else{
         document.getElementById("psswd1a").innerHTML="";
         document.getElementById("psswd1b").innerHTML="correct";
+        return true;
     }
 
 }
@@ -80,6 +106,7 @@ function validatePassword2(){
         return false;
     }else{
         document.getElementById("psswd2a").innerHTML="";
+        
     }
 
     if(password2 != password1 ){
@@ -89,6 +116,14 @@ function validatePassword2(){
     }else{
         document.getElementById("psswd2a").innerHTML="";
         document.getElementById("psswd2b").innerHTML="correct";
+        return true;
     }
 
 }
+
+
+function onLoad(){
+   
+    document.getElementById("titleDone").innerHTML = "Your account has been successfully created " ;
+}
+
