@@ -101,9 +101,6 @@ input, button, select, optgroup, textarea {
   z-index: 1;
 }
 
-.form-control label{
-  
-}
 
 .form-group .input-label::before {
   content: "";
