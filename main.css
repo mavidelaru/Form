@@ -9,9 +9,6 @@ input, button, select, optgroup, textarea {
   line-height: inherit;
 }
 
-
-
-
 .form-control{
   display: block;
   width: 100%;
@@ -68,13 +65,12 @@ input, button, select, optgroup, textarea {
 }
 
 
-.contact-form .btnContact {
+.btnContact {
     background: linear-gradient(131.62deg, #ea168c 0%, #ff3267 100%);;
     padding-left: 45px;
     padding-right: 45px;
     height: 48px;
     text-align: center;
-    margin-top: 30px;
     width: auto;
     cursor: pointer;
     border: none;
@@ -101,10 +97,9 @@ input, button, select, optgroup, textarea {
   z-index: 1;
 }
 
-
 .form-group .input-label::before {
   content: "";
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.815);
   position: absolute;
   height: 10px;
   display: block;
@@ -114,11 +109,13 @@ input, button, select, optgroup, textarea {
   right: 0;
 }
 
+/* Modal */
+#modal-body {
+  padding: 2rem;
+  font-size: 1.2rem;
+}
 
-
-
-
-
-
-
+.no-border{
+  border: none!important;
+}
 

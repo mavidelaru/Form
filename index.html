@@ -22,7 +22,7 @@
         <div class="contact-image col-dn">
             <img src="github.svg" />
         </div>
-        <form action="https://mavidelaru.github.io/done.html" onsubmit="return onSubmit()"   >
+        <form onsubmit="return onSubmit(event)"   >
             <h1>Create your profile</h1>
 
                 <div class=" justify-content-center ">
@@ -80,13 +80,34 @@
                     </div>
                     
                     <div class="form-group">
-                        <input type="submit" name="btnSubmit" class="btnContact"
+                        <input type="submit" name="btnSubmit" class="btnContact mt-5"
                             value="Sign up" />
                     </div>
                 </div>
             </div>
         </form>
     </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="doneModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header no-border">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div id="modal-body">
+            Your account has been successfully created 👌
+            <br>
+            Thanks for your time.
+        </div>
+        <div class="modal-footer no-border">
+          <button type="button" class="btnContact" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 <script src="formulari_2.js"> </script>

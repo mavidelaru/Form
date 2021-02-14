@@ -7,7 +7,8 @@ document.getElementById("password2").addEventListener("blur",validatePassword2);
 
 
 
-function onSubmit (){
+function onSubmit (e){
+    e.preventDefault();
     if (
     validateName() &&
     validateSurname() &&
@@ -16,6 +17,7 @@ function onSubmit (){
     validatePassword1() &&
     validatePassword2()
     ){
+        $('#doneModal').modal('show')
         return true;
     } else {
         return false;
@@ -126,8 +128,4 @@ function validatePassword2(){
 }
 
 
-function onLoad(){
-   
-    document.getElementById("titleDone").innerHTML = "Your account has been successfully created " ;
-}
 
