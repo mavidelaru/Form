@@ -9,6 +9,14 @@ input, button, select, optgroup, textarea {
   line-height: inherit;
 }
 
+h1 {
+  margin-bottom: 1.5rem!important;
+}
+
+.row{
+  min-height: 5.5rem;
+}
+
 .form-control{
   display: block;
   width: 100%;
@@ -25,6 +33,10 @@ input, button, select, optgroup, textarea {
   resize: none;
   backface-visibility: hidden;
   font-size: 12px;
+}
+.text-danger, .text-success { 
+  font-size: 0.75rem;
+  margin-bottom: 0rem!important;
 }
 
 .contact-form{
